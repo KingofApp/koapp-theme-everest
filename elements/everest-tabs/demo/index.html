@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <title>everest-tabs demo</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <script src="../../../../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../../../../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../../../../bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="../../everest-toolbar/everest-toolbar.html">
+    <link rel="import" href="../everest-tab.html">
+    <link rel="import" href="../everest-tabs.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      #container {
+        max-width: 600px;
+      }
+
+      .vertical-section {
+        margin: 0 0 40px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+    <div id="container" class="vertical-section-container centered">
+      <h3>Plain <code>everest-tabs</code>.</h3>
+      <div class="vertical-section">
+        <everest-tabs selected="0">
+          <everest-tab>ITEM ONE</everest-tab>
+          <everest-tab>ITEM TWO</everest-tab>
+          <everest-tab>ITEM THREE</everest-tab>
+        </everest-tabs>
+      </div>
+
+      <h3>
+        The <code>scrollable</code> attribute causes the tabs to scroll, rather
+        than compress, when there is not enough space. Arrow buttons appear when
+        any of the tabs are not completely visible.
+      </h3>
+      <div class="vertical-section">
+        <everest-tabs selected="0" scrollable>
+          <everest-tab>NUMBER ONE ITEM</everest-tab>
+          <everest-tab>ITEM TWO</everest-tab>
+          <everest-tab>THE THIRD ITEM</everest-tab>
+          <everest-tab>THE ITEM FOUR</everest-tab>
+          <everest-tab>FIFTH</everest-tab>
+          <everest-tab>THE SIXTH TAB</everest-tab>
+          <everest-tab>NUMBER SEVEN</everest-tab>
+          <everest-tab>EIGHT</everest-tab>
+          <everest-tab>NUMBER NINE</everest-tab>
+          <everest-tab>THE TENTH</everest-tab>
+          <everest-tab>THE ITEM ELEVEN</everest-tab>
+          <everest-tab>TWELFTH ITEM</everest-tab>
+        </everest-tabs>
+      </div>
+
+      <h3>
+        Tab layout is effected by the writing direction of the surrounding area.
+      </h3>
+      <div class="vertical-section">
+        <div dir="rtl">
+          <everest-tabs selected="0">
+            <everest-tab>ITEM ONE</everest-tab>
+            <everest-tab>ITEM TWO</everest-tab>
+            <everest-tab>ITEM THREE</everest-tab>
+          </everest-tabs>
+          &nbsp;
+          <everest-tabs selected="0" scrollable>
+            <everest-tab>NUMBER ONE ITEM</everest-tab>
+            <everest-tab>ITEM TWO</everest-tab>
+            <everest-tab>THE THIRD ITEM</everest-tab>
+            <everest-tab>THE ITEM FOUR</everest-tab>
+            <everest-tab>FIFTH</everest-tab>
+            <everest-tab>THE SIXTH TAB</everest-tab>
+            <everest-tab>NUMBER SEVEN</everest-tab>
+            <everest-tab>EIGHT</everest-tab>
+            <everest-tab>NUMBER NINE</everest-tab>
+            <everest-tab>THE TENTH</everest-tab>
+            <everest-tab>THE ITEM ELEVEN</everest-tab>
+            <everest-tab>TWELFTH ITEM</everest-tab>
+          </everest-tabs>
+        </div>
+      </div>
+
+      <h3>
+        Tabs can be used in a <code>everest-toolbar</code>.
+      </h3>
+      <div class="vertical-section">
+        <style is="custom-style">
+          .self-end {
+            /* This mixin (from iron-flex-layout) aligns the tabs to the
+               bottom of the toolbar. */
+            @apply(--layout-self-end);
+          }
+        </style>
+
+        <everest-toolbar class="tall">
+          <everest-tabs selected="0" class="bottom self-end" style="width: 300px;">
+            <everest-tab>ITEM ONE</everest-tab>
+            <everest-tab>ITEM TWO</everest-tab>
+          </everest-tabs>
+        </everest-toolbar>
+      </div>
+    </div>
+  </body>
+</html>
