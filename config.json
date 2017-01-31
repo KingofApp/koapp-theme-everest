@@ -2,10 +2,10 @@
   "name": "Everest",
   "identifier": "koapp-theme-everest",
   "description": {
-    "en-US" : "",
-    "es-ES" : "Plantilla basada en las guías de diseño de Material Design"
+    "en-US": "",
+    "es-ES": "Plantilla basada en las guías de diseño de Material Design"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "King of App",
   "category": [
     "material-design"
@@ -19,14 +19,14 @@
   "showOn": {
     "market": true
   },
-  "images" : {
-    "list" : "themes/koapp-theme-everest/images/list.png",
-    "screenshots" : [
-      "themes/koapp-theme-everest/images/screenshot01.png",
-      "themes/koapp-theme-everest/images/screenshot02.png"
+  "images": {
+    "list": "http://resources.kingofapp.com/themes/koapp-theme-everest/images/list.png",
+    "screenshots": [
+      "http://resources.kingofapp.com/themes/koapp-theme-everest/images/screenshot01.png",
+      "http://resources.kingofapp.com/themes/koapp-theme-everest/images/screenshot02.png"
     ],
-    "popover" : "themes/koapp-theme-everest/images/popover.png",
-    "banner" : "themes/koapp-theme-everest/images/banner.png"
+    "popover": "http://resources.kingofapp.com/themes/koapp-theme-everest/images/popover.png",
+    "banner": "http://resources.kingofapp.com/themes/koapp-theme-everest/images/banner.png"
   },
   "defaultConfig": {
     "colors": {
@@ -60,5 +60,5 @@
     "menu": "polymermenu"
   },
   "subscription": false,
-  "main": "themes/koapp-theme-everest/koapp-theme-everest.html"
+  "main": "http://resources.kingofapp.com/themes/koapp-theme-everest/koapp-theme-everest.html"
 }
